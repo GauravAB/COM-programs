@@ -1,0 +1,8 @@
+LIBRARY		ExeServerClient.dll
+
+
+EXPORTS
+			DllCallgetSine PRIVATE
+			DllCallgetCosine PRIVATE
+			DllCallgetTangent PRIVATE
+

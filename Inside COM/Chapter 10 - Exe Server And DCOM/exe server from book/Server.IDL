@@ -1,0 +1,129 @@
+//MIDL compiler takes this file to generate proxy/stub and type lib
+
+//Interface declaration
+
+import "unknwn.idl";
+
+//0xab577229, 0x9bb9, 0x4589, 0xbd, 0x83, 0x2, 0x47, 0xe8, 0x19, 0x50, 0x7
+//Interface IX
+[
+	object,
+	uuid(AB577229-9BB9-4589-BD83-0247E8195007),
+	helpstring("IX Interface"),
+	pointer_default(unique)
+]
+
+interface IX : IUnknown
+{
+	HRESULT FxStringIn([in,string] wchar_t* szIn);
+	HRESULT FxStringOut([out, string] wchar_t** szOut);
+};
+
+
+//0x70467c73, 0xf547, 0x42e3, 0x97, 0xe0, 0xe5, 0x20, 0x7, 0x99, 0x4c, 0x28
+//Interface IY
+[
+	object,
+	uuid(70467C73-F547-42E3-97E0-E52007994C28),
+	helpstring("IY Interface"),
+	pointer_default(unique)
+]
+
+interface IY: IUnknown
+{
+	HRESULT FyCount([out] long* sizeArray);
+	HRESULT FyArrayIn([in] long sizeIn,
+		[in, size_is(sizeIn)] long arrayIn[]);
+	HRESULT FyArrayOut([out, in] long* psizeInOut,
+		[out, size_is(*psizeInOut)] long arrayOut[]);
+};
+
+//structure of interface IZ
+
+typedef struct
+{
+	double x;
+	double y;
+	double z;
+}Point3d;
+
+
+//0x80905f1b, 0xc703, 0x4bdc, 0xa1, 0xba, 0x79, 0x59, 0x2, 0xc1, 0xf7, 0xab
+//Interface IZ
+[
+	object,
+	uuid(80905F1B-C703-4BDC-A1BA-795902C1F7AB),
+	helpstring("IZ interface"),
+	pointer_default(unique)
+]
+
+interface IZ : IUnknown
+{
+	HRESULT FzStructIn([in] Point3d pt);
+	HRESULT FzStructOut([out] Point3d* pt);
+	
+};
+
+//Component descriptions
+
+//0x2d40547c, 0xd1fa, 0x49c1, 0x84, 0x1b, 0xe6, 0x9d, 0xf6, 0xca, 0x66, 0x71
+[
+	uuid(2D40547C-D1FA-49C1-841B-E69DF6CA6671),
+	version(1.0),
+	helpstring("component1.0 Type Library")
+]
+
+library ServerLib
+{
+	importlib("stdole32.tlb");
+
+	//0x37cf8074, 0x8bc1, 0x45ec, 0xbb, 0xf0, 0x73, 0xad, 0x30, 0xeb, 0x99, 0xfb
+	//component 1
+	[
+		uuid(37CF8074-8BC1-45EC-BBF0-73AD30EB99FB),
+		helpstring("Component 1 Class")
+	]
+
+	coclass Component1
+	{
+		[default] interface IX;
+		interface IY;
+		interface IZ;
+	};
+
+
+	//0x4e76bcaa, 0xafa, 0x4ac0, 0xb7, 0xe8, 0x0, 0x77, 0x70, 0xe8, 0xf8, 0xe8);
+	//component 2
+	[
+		uuid(4E76BCAA-0AFA-4AC0-B7E8-007770E8F8E8),
+		helpstring("Component 2 Class")
+	]
+
+	coclass Component2
+	{
+		[default] interface IY;
+		interface IZ;
+	};
+
+	
+	//0x46549e71, 0xce86, 0x4680, 0xa0, 0xdf, 0x3a, 0x9d, 0xde, 0x50, 0x3c, 0x93);
+	//component 3
+	[
+		uuid(46549E71-CE86-4680-A0DF-3A9DDE503C93),
+		helpstring("Component 3 Class")
+	]
+
+	coclass Component3
+	{
+
+		[default] interface IZ;
+	};
+};
+
+
+
+
+
+
+
+

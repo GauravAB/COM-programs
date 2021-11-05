@@ -1,0 +1,9 @@
+LIBRARY	ClassFactoryServerWithoutRegFile
+
+EXPORTS
+		DllRegisterServer PRIVATE
+		DllUnregisterServer PRIVATE
+		DllGetClassObject PRIVATE
+		DllCanUnloadNow PRIVATE
+
+

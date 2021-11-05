@@ -1,0 +1,43 @@
+import "unknwn.idl";
+//ICubeCubeRoot Interface
+[
+	object,
+	uuid(2BCA012D-29A0-4FE2-9FBC-0D71631F504B), //IID of ICubeCubeRoot
+	helpstring("CubeCubeRoot interface"),
+	pointer_default(unique),
+	dual,
+	oleautomation
+]
+
+interface ICubeCuberoot : IDispatch
+{
+	import "oaidl.idl";
+	HRESULT CubeOfNumber([in] int,[out, retval] float*);
+	HRESULT CubeRootOfNumber([in] int, [out, retval] float*);
+};
+
+// The actual typelib related Code 
+[
+	uuid(361D616A-248E-4FD5-A1C6-D503B2BB1103),
+	version(1.0),
+	helpstring("CCubeCubeRoot component type library")
+]
+
+library AutomationServerTypeLib
+{
+	importlib("stdole32.tlb");
+	//component code
+	[
+		uuid(45BE5516-A88A-44E0-B90F-69F37E876F33),
+		helpstring("CubeCuberoot automation class")
+	]
+
+	coclass CCubeCuberoot
+	{
+		[default]interface ICubeCuberoot;
+	};
+};
+
+
+
+

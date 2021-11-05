@@ -1,0 +1,8 @@
+LIBRARY outerComponent.dll
+
+EXPORTS
+		DllGetClassObject	PRIVATE
+		DllCanUnloadNow		PRIVATE
+
+		
+		

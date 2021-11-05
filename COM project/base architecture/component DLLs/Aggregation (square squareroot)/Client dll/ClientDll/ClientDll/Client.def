@@ -1,0 +1,6 @@
+LIBRARY		AggregationClient
+
+EXPORTS
+			DllCallSquareOfANumber
+			DllCallSquarerootOfANumber
+

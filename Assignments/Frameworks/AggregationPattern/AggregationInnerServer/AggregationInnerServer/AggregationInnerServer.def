@@ -1,0 +1,8 @@
+LIBRARY		AggregationInnerServer
+
+EXPORTS
+			DllRegisterServer
+			DllUnregisterServer
+			DllCanUnloadNow
+			DllGetClassObject
+

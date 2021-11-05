@@ -1,0 +1,10 @@
+#define IDS_CPU 101
+#define IDS_CACHES 102
+#define IDS_MAINBOARD 103
+#define IDS_MEMORY 104
+#define IDS_GRAPHICS 105
+#define IDS_NETWORK 106
+#define IDS_BIOS 107
+
+
+

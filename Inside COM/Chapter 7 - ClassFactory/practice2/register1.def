@@ -1,0 +1,5 @@
+LIBRARY my_component1.dll
+EXPORTS
+		DllGetClassObject PRIVATE
+		DllCanUnloadNow PRIVATE
+		

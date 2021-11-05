@@ -1,0 +1,17 @@
+import "unknwn.idl";
+
+//interface description
+[	
+	object,
+	uuid(ECDDED6A-7F44-4A00-95BB-FB134B3793DA),
+	helpstring("ITrigo interface"),
+	pointer_default(unique)
+]
+
+interface ITrigo : IUnknown
+{
+	HRESULT getSine([in]float, [in,out]float*);
+	HRESULT getCosine([in]float, [in,out]float*);
+	HRESULT getTangent([in]float, [in,out]float*);
+};
+

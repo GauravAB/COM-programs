@@ -1,0 +1,10 @@
+LIBRARY		ExeServerClient.dll
+
+EXPORTS
+			DllCallgetSine
+			DllCallgetCosine
+			DllCallgetTangent
+			DllActivateTrigoLibrary
+
+
+

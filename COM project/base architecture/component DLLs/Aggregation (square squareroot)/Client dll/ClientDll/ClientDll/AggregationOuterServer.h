@@ -1,0 +1,28 @@
+#ifndef __AGGREGATEOUTER_H__
+#define __AGGREGATEOUTER_H__
+
+interface ISquare : public IUnknown
+{
+	virtual HRESULT __stdcall SquareOfAnInteger(int, int*) = 0;
+};
+
+
+// {EDCF4043-7AF3-4159-8BAA-1EF8DB233DF5}
+CLSID CLISD_CSquare = { 0xedcf4043, 0x7af3, 0x4159, 0x8b, 0xaa, 0x1e, 0xf8, 0xdb, 0x23, 0x3d, 0xf5};
+
+// {FF687204-0F4C-4581-8BAA-935BFC1A14F8}
+IID IID_ISquare = { 0xff687204, 0xf4c, 0x4581, 0x8b, 0xaa, 0x93, 0x5b, 0xfc, 0x1a, 0x14, 0xf8};
+
+
+//Inner Server details
+interface ISquareroot : public IUnknown
+{
+	virtual HRESULT __stdcall SquarerootOfAnInteger(int, int*) = 0;
+};
+
+// {E3BD43AE-49D6-44D5-A389-786435F3C77B}
+CLSID CLSID_CSquareroot = { 0xe3bd43ae, 0x49d6, 0x44d5, 0xa3, 0x89, 0x78, 0x64, 0x35, 0xf3, 0xc7, 0x7b };
+// {020849FD-A5D4-4F7C-A628-1682AF41597F}
+IID IID_ISquareroot = { 0x20849fd, 0xa5d4, 0x4f7c, 0xa6, 0x28, 0x16, 0x82, 0xaf, 0x41, 0x59, 0x7f };
+
+#endif

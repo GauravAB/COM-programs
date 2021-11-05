@@ -1,0 +1,10 @@
+LIBRARY		ExeServerProxyStub.dll
+
+
+EXPORTS
+			DllRegisterServer PRIVATE
+			DllUnregisterServer PRIVATE
+			DllCanUnloadNow PRIVATE
+			DllGetClassObject PRIVATE
+			GetProxyDllInfo	PRIVATE
+

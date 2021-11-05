@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{4569F083-8A80-419B-BEAD-9569989AF5F6}]
+@="ExeServer"
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{4569F083-8A80-419B-BEAD-9569989AF5F6}\LocalServer32]
+@="D:\dev\CodeBase\Myprojects\COM\COM project\base architecture\component DLLs\Exe Server (trigo functions)\BareClientExe\serverLibraries\\ExeServer.exe"
+
+
+
+
+
+
+

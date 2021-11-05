@@ -1,0 +1,7 @@
+LIBRARY	component.dll
+
+EXPORTS 
+		DllCanUnloadNow		PRIVATE
+		DllRegisterServer	PRIVATE
+		DllGetClassObject	PRIVATE
+		DllUnregisterServer	PRIVATE

@@ -1,0 +1,8 @@
+LIBRARY		ContainmentClient
+
+EXPORTS
+			DllCallSumOfTwoIntegers
+			DllCallSubtractionOfTwoIntegers
+			DllCallMultiplicationOfTwoIntegers
+			DllCallDivisionOfTwoIntegers
+

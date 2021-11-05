@@ -1,0 +1,16 @@
+#include "resource.h"
+
+STRINGTABLE
+BEGIN
+	IDS_CPU,	L"CPU"
+	IDS_CACHES,	L"Caches"
+	IDS_MAINBOARD,	L"MainBoard"
+	IDS_MEMORY,	L"Memory"
+	IDS_GRAPHICS,	L"Graphics"
+	IDS_NETWORK,	L"Network"
+	IDS_BIOS,	L"BIOS"	
+	IDS_SOUNDCARD,  L"Audiocard"
+END
+
+
+

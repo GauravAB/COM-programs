@@ -1,0 +1,6 @@
+LIBRARY		ClassFactoryClient
+
+EXPORTS
+			DllCallSumOfTwoIntegers
+			DllCallSubtractionOfTwoIntegers
+

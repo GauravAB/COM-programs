@@ -1,0 +1,3 @@
+
+
+IUnknown* callCreateInstance(char *name);

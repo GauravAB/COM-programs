@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{7E06580B-35EB-424E-BB0B-B6426F0E998E}]
+@="ExeServerWithFramework"
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{7E06580B-35EB-424E-BB0B-B6426F0E998E}\LocalServer32]
+@="C:\\Server.exe"
+
+
+
+
+
+
+

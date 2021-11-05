@@ -1,0 +1,6 @@
+LIBRARY		MonikerClient.dll
+
+
+EXPORTS
+			DllGetNextOperator
+
